@@ -1,0 +1,129 @@
+
+.logo{
+	width: 100px;
+	height: auto;
+	display: block;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px;
+	background-color: var(--gray-50);
+}
+.main_nav {
+	display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.main-nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 20px;
+
+}
+.main-nav li{
+	display: inline; /*Makes items horizontal*/
+	margin-right: 20px;
+}
+
+.main-nav a{
+	text-decoration: none;
+	color: var(--gray-700);
+	font-family: "Karla", sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 1.5px;
+	transition: color0.3s ease;
+}
+.main-nav a:hover{
+	color: var(--gray-950);
+
+}
+
+.plans_button{
+	border: 2px solid #2C2640;
+	background-color: transparent;
+	padding: 12px 28px;
+	font-family: "Karla", sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 1.5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.plans_button a{
+	text-decoration: none;
+	color: var(--gray-950);
+}
+
+.plans_button:hover{
+	background-color: var(--gray-950);
+}
+
+.plans_button:hover a{
+	color: var(--gray-50);
+}
+#hero{
+	background-color: #2C2640;
+	height: 600px;
+}
+
+#hero_box{
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+#hero_content {
+	padding: 30%;
+}
+
+#insurance h2{
+	font-size: 80px;
+	line-height: 1;
+	margin-bottom: 20px;
+	color: white;
+}
+
+/*For mobile -smaller size*/
+@media (max-width: 768px){
+	#insurance h2 {
+		font-size: 48px;
+	}
+}
+
+:root{
+	--blue-950: hsl(256, 26%, 20%);
+	--blue-500: hsl(216, 30%, 68%);
+	--gray-950: hsl(270, 9%, 17%);
+	--gray-700: hsl(273, 4%, 51%);
+	--gray-50: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Karla:wght@400;700&display=swap');
+@media (min-width: 1440px){
+	header,
+	#hero,
+	footer{
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+}

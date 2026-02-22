@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>View Plans - Insure</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="view-plans.css">
+</head>
+<body>
+	<div class="header-wrapper">
+		<header>
+			<img src="images/logo.svg" alt="Company Logo" class="logo">
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#howwework">HOW WE WORK</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="#account">ACCOUNT</a></li>
+					<li><button class="view-plans-btn active">VIEW PLANS</button></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<main>
+		<!-- Plans Hero Section -->
+		<section id="plans-hero">
+			<div class="plans-hero-container">
+				<h1>Choose Your Perfect Insurance Plan</h1>
+				<p>Find the right coverage for your needs and budget. Our flexible plans are designed to protect what matters most to you and your family.</p>
+				
+				<!-- Plan Type Toggle -->
+				<div class="plan-toggle">
+					<button class="toggle-btn active" data-type="life">Life Insurance</button>
+					<button class="toggle-btn" data-type="health">Health Insurance</button>
+					<button class="toggle-btn" data-type="auto">Auto Insurance</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Life Insurance Plans -->
+		<section id="life-plans" class="plans-section active">
+			<div class="plans-container">
+				<div class="plans-header">
+					<h2>Life Insurance Plans</h2>
+					<p>Protect your family's financial future with our comprehensive life insurance options</p>
+					
+					<!-- Coverage Amount Slider -->
+					<div class="coverage-selector">
+						<label for="coverage-amount">Coverage Amount:</label>
+						<div class="slider-container">
+							<input type="range" id="coverage-amount" min="100000" max="2000000" step="50000" value="500000">
+							<div class="slider-value">$<span id="coverage-display">500,000</span></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="plans-grid">
+					<!-- Basic Life Plan -->
+					<div class="plan-card">
+						<div class="plan-header">
+							<h3>Basic Life</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount" data-base-price="25">25</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Essential protection for young families and individuals starting their insurance journey.</p>
+						</div>
+						<div class="plan-features">
+							<h4>What's Included:</h4>
+							<ul>
+								<li><span class="check">✓</span>Term life insurance coverage</li>
+								<li><span class="check">✓</span>10, 20, or 30-year terms</li>
+								<li><span class="check">✓</span>Level premiums guaranteed</li>
+								<li><span class="check">✓</span>Conversion option to whole life</li>
+								<li><span class="check">✓</span>24/7 customer support</li>
+								<li><span class="check">✓</span>Fast online application</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="basic-life">Select Basic Life</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+
+					<!-- Premium Life Plan -->
+					<div class="plan-card featured">
+						<div class="plan-badge">Most Popular</div>
+						<div class="plan-header">
+							<h3>Premium Life</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount" data-base-price="45">45</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Comprehensive coverage with additional benefits and flexible options for growing families.</p>
+						</div>
+						<div class="plan-features">
+							<h4>Everything in Basic Life, plus:</h4>
+							<ul>
+								<li><span class="check">✓</span>Accidental death benefit</li>
+								<li><span class="check">✓</span>Waiver of premium rider</li>
+								<li><span class="check">✓</span>Term conversion without medical exam</li>
+								<li><span class="check">✓</span>Living benefits for terminal illness</li>
+								<li><span class="check">✓</span>Priority customer service</li>
+								<li><span class="check">✓</span>Annual policy review</li>
+								<li><span class="check">✓</span>Child term rider available</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="premium-life">Select Premium Life</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+
+					<!-- Complete Life Plan -->
+					<div class="plan-card">
+						<div class="plan-header">
+							<h3>Complete Life</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount" data-base-price="85">85</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Maximum protection with whole life benefits and cash value accumulation for long-term wealth building.</p>
+						</div>
+						<div class="plan-features">
+							<h4>Everything in Premium Life, plus:</h4>
+							<ul>
+								<li><span class="check">✓</span>Whole life insurance option</li>
+								<li><span class="check">✓</span>Cash value accumulation</li>
+								<li><span class="check">✓</span>Loan options against cash value</li>
+								<li><span class="check">✓</span>Guaranteed dividends (participating policies)</li>
+								<li><span class="check">✓</span>Estate planning benefits</li>
+								<li><span class="check">✓</span>Dedicated financial advisor</li>
+								<li><span class="check">✓</span>Investment guidance and tools</li>
+								<li><span class="check">✓</span>Legacy planning services</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="complete-life">Select Complete Life</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Health Insurance Plans -->
+		<section id="health-plans" class="plans-section">
+			<div class="plans-container">
+				<div class="plans-header">
+					<h2>Health Insurance Plans</h2>
+					<p>Comprehensive health coverage to keep you and your family healthy and protected</p>
+				</div>
+
+				<div class="plans-grid">
+					<!-- Bronze Health Plan -->
+					<div class="plan-card">
+						<div class="plan-header">
+							<h3>Bronze Health</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount">180</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Basic health coverage with essential benefits at an affordable price.</p>
+						</div>
+						<div class="plan-features">
+							<h4>What's Included:</h4>
+							<ul>
+								<li><span class="check">✓</span>$6,000 annual deductible</li>
+								<li><span class="check">✓</span>Preventive care covered 100%</li>
+								<li><span class="check">✓</span>Generic prescription coverage</li>
+								<li><span class="check">✓</span>Emergency room visits</li>
+								<li><span class="check">✓</span>Specialist visits after deductible</li>
+								<li><span class="check">✓</span>Nationwide provider network</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="bronze-health">Select Bronze Health</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+
+					<!-- Silver Health Plan -->
+					<div class="plan-card featured">
+						<div class="plan-badge">Best Value</div>
+						<div class="plan-header">
+							<h3>Silver Health</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount">280</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Balanced coverage with lower deductibles and comprehensive benefits.</p>
+						</div>
+						<div class="plan-features">
+							<h4>Everything in Bronze Health, plus:</h4>
+							<ul>
+								<li><span class="check">✓</span>$3,000 annual deductible</li>
+								<li><span class="check">✓</span>$30 primary care copay</li>
+								<li><span class="check">✓</span>$60 specialist copay</li>
+								<li><span class="check">✓</span>Brand name prescription coverage</li>
+								<li><span class="check">✓</span>Mental health benefits</li>
+								<li><span class="check">✓</span>Maternity and newborn care</li>
+								<li><span class="check">✓</span>Telehealth services included</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="silver-health">Select Silver Health</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+
+					<!-- Gold Health Plan -->
+					<div class="plan-card">
+						<div class="plan-header">
+							<h3>Gold Health</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount">380</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Premium coverage with the lowest out-of-pocket costs and premium benefits.</p>
+						</div>
+						<div class="plan-features">
+							<h4>Everything in Silver Health, plus:</h4>
+							<ul>
+								<li><span class="check">✓</span>$1,500 annual deductible</li>
+								<li><span class="check">✓</span>$20 primary care copay</li>
+								<li><span class="check">✓</span>$40 specialist copay</li>
+								<li><span class="check">✓</span>Specialty prescription coverage</li>
+								<li><span class="check">✓</span>Alternative medicine coverage</li>
+								<li><span class="check">✓</span>Vision and dental add-ons</li>
+								<li><span class="check">✓</span>24/7 nurse hotline</li>
+								<li><span class="check">✓</span>Health and wellness programs</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="gold-health">Select Gold Health</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Auto Insurance Plans -->
+		<section id="auto-plans" class="plans-section">
+			<div class="plans-container">
+				<div class="plans-header">
+					<h2>Auto Insurance Plans</h2>
+					<p>Protect your vehicle and stay covered on the road with our flexible auto insurance options</p>
+				</div>
+
+				<div class="plans-grid">
+					<!-- Basic Auto Plan -->
+					<div class="plan-card">
+						<div class="plan-header">
+							<h3>Basic Auto</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount">95</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Essential auto coverage that meets state requirements and protects your finances.</p>
+						</div>
+						<div class="plan-features">
+							<h4>What's Included:</h4>
+							<ul>
+								<li><span class="check">✓</span>Liability coverage (state minimums)</li>
+								<li><span class="check">✓</span>Uninsured motorist protection</li>
+								<li><span class="check">✓</span>24/7 claims reporting</li>
+								<li><span class="check">✓</span>Mobile app for policy management</li>
+								<li><span class="check">✓</span>Multi-car discounts available</li>
+								<li><span class="check">✓</span>Good driver discounts</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="basic-auto">Select Basic Auto</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+
+					<!-- Standard Auto Plan -->
+					<div class="plan-card featured">
+						<div class="plan-badge">Recommended</div>
+						<div class="plan-header">
+							<h3>Standard Auto</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount">145</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Comprehensive protection with collision and comprehensive coverage for complete peace of mind.</p>
+						</div>
+						<div class="plan-features">
+							<h4>Everything in Basic Auto, plus:</h4>
+							<ul>
+								<li><span class="check">✓</span>Collision coverage</li>
+								<li><span class="check">✓</span>Comprehensive coverage</li>
+								<li><span class="check">✓</span>$500 deductible options</li>
+								<li><span class="check">✓</span>Rental car reimbursement</li>
+								<li><span class="check">✓</span>Roadside assistance</li>
+								<li><span class="check">✓</span>Glass repair coverage</li>
+								<li><span class="check">✓</span>Safe driving monitoring app</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="standard-auto">Select Standard Auto</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+
+					<!-- Premium Auto Plan -->
+					<div class="plan-card">
+						<div class="plan-header">
+							<h3>Premium Auto</h3>
+							<div class="plan-price">
+								<span class="currency">$</span>
+								<span class="amount">195</span>
+								<span class="period">/month</span>
+							</div>
+							<p class="plan-description">Maximum coverage with premium features and benefits for luxury vehicle owners.</p>
+						</div>
+						<div class="plan-features">
+							<h4>Everything in Standard Auto, plus:</h4>
+							<ul>
+								<li><span class="check">✓</span>$250 deductible options</li>
+								<li><span class="check">✓</span>Gap insurance coverage</li>
+								<li><span class="check">✓</span>New car replacement</li>
+								<li><span class="check">✓</span>Premium roadside assistance</li>
+								<li><span class="check">✓</span>Accident forgiveness</li>
+								<li><span class="check">✓</span>OEM parts guarantee</li>
+								<li><span class="check">✓</span>Vanishing deductible program</li>
+								<li><span class="check">✓</span>Personal concierge service</li>
+							</ul>
+						</div>
+						<div class="plan-footer">
+							<button class="select-plan-btn" data-plan="premium-auto">Select Premium Auto</button>
+							<a href="#" class="plan-details">View Full Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Compare Plans Section -->
+		<section id="compare-plans">
+			<div class="compare-container">
+				<h2>Compare Plans Side by Side</h2>
+				<p>Need help deciding? Use our comparison tool to see the differences between plans at a glance.</p>
+				<button class="compare-btn">Compare Selected Plans</button>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section id="plans-faq">
+			<div class="faq-container">
+				<h2>Frequently Asked Questions</h2>
+				
+				<div class="faq-grid">
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+							<span>How do I choose the right coverage amount?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							<p>For life insurance, a good rule of thumb is 10-12 times your annual income. For other insurance types, consider your assets, family needs, and financial obligations. Our advisors can help you determine the optimal coverage for your situation.</p>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+							<span>Can I change my plan later?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							<p>Yes, most of our plans offer flexibility to upgrade, downgrade, or modify coverage. Some changes may require medical underwriting or have waiting periods. Contact our customer service team to discuss your options.</p>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+							<span>Are there any medical exams required?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							<p>For life insurance coverage under $500,000, we often offer simplified underwriting with no medical exam required. Larger amounts or certain health conditions may require a medical exam. The process is quick and convenient.</p>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+							<span>Do you offer family discounts?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							<p>Yes! We offer multi-policy discounts when you bundle different types of insurance, family plan discounts for health insurance, and multi-car discounts for auto insurance. These can save you up to 25% on your premiums.</p>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+							<span>How quickly can my coverage start?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							<p>Coverage can often begin within 24-48 hours for health and auto insurance. Life insurance may take 1-2 weeks depending on underwriting requirements. We'll keep you informed throughout the entire process.</p>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+							<span>What payment options are available?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							<p>We offer flexible payment options including monthly, quarterly, semi-annual, and annual payments. You can pay by credit card, bank transfer, or automatic deduction. Annual payments often come with a discount.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section id="plans-cta">
+			<div class="cta-container">
+				<div class="cta-content">
+					<h2>Ready to Get Started?</h2>
+					<p>Our insurance experts are standing by to help you find the perfect plan. Get your personalized quote in minutes.</p>
+					<div class="cta-buttons">
+						<button class="cta-primary">Get Free Quote</button>
+						<button class="cta-secondary">Speak with Advisor</button>
+					</div>
+					<p class="cta-disclaimer">No obligation. Free consultation. Expert guidance guaranteed.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<div class="footer-wrapper">
+		<footer>
+			<div class="footer-container">
+				<div class="footer-top">
+					<img src="images/logo.svg" alt="Company Logo" class="footer-logo">
+					<div class="social-links">
+						<a href="#" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+						<a href="#" aria-label="Twitter"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+						<a href="#" aria-label="Pinterest"><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
+						<a href="#" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+					</div>
+				</div>
+				
+				<hr class="footer-divider">
+				
+				<div class="footer-bottom">
+					<div class="footer-links">
+						<div class="footer-column">
+							<h3>Our company</h3>
+							<ul>
+								<li><a href="#">How we work</a></li>
+								<li><a href="#">Why Insure?</a></li>
+								<li><a href="view-plans.html">View plans</a></li>
+								<li><a href="#">Reviews</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h3>Help me</h3>
+							<ul>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Terms of use</a></li>
+								<li><a href="#">Privacy policy</a></li>
+								<li><a href="#">Cookies</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h3>Contact</h3>
+							<ul>
+								<li><a href="#">Sales</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Live chat</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h3>Others</h3>
+							<ul>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Press</a></li>
+								<li><a href="#">Licenses</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-copyright">
+						<p>&copy; 2024 Insure. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="view-plans.js"></script>
+</body>
+</html>
